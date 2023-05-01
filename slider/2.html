@@ -6,9 +6,13 @@
   <meta charset="utf-8" />
   <title>Swiper demo</title>
   <meta name="viewport" content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1" />
+  
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css" />
-
+  
+  <!-- Swiper JS -->
+  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+  
   <!-- Demo styles -->
   <style>
     html,
@@ -38,6 +42,7 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      border-radius: 64px;
     }
 
     .swiper-slide img {
@@ -45,6 +50,7 @@
       width: 100%;
       height: 100%;
       object-fit: cover;
+      border-radius: 64px;
     }
   </style>
 </head>
@@ -63,8 +69,6 @@
     <div class="swiper-pagination"></div>
   </div>
 
-  <!-- Swiper JS -->
-  <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
 
   <!-- Initialize Swiper -->
   
@@ -74,6 +78,9 @@
       slidesPerView: 1,
       spaceBetween: 30,
       loop: true,
+      effect:'fade',
+      
+      
       pagination: {
         el: ".swiper-pagination",
         clickable: true,
