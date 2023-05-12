@@ -1,104 +1,75 @@
+
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="travel.css">
-  
-
-  <script type="module" crossorigin src="https://travel-slider.uiinitiative.com/assets/index.b5470e05.js"></script>
-  <link rel="modulepreload" href="https://travel-slider.uiinitiative.com/assets/vendor.a21904cd.js">
-
-
-
-
-</head>
+  <title>Carousel Slider</title>
+    <script type="module" crossorigin src="https://carousel-slider.uiinitiative.com/assets/index.df5975ff.js"></script>
+    <link rel="stylesheet" href="./package/1.css">
+  </head>
 
 <body>
   <div id="app">
-    <!-- Travel slider -->
-    <div class="travel-slider">
-      <!-- Rotating Planet -->
-      <div class="travel-slider-planet">
-        <img src="images/earth.svg" />
-        <div class="travel-slider-cities">
-          <img src="images/usa.svg" />
-          <img src="images/england.svg" />
-          <img src="images/france.svg" />
-          <img src="images/italy.svg" />
-          <img src="images/russia.svg" />
-          <img src="images/egypt.svg" />
-          <img src="images/india.svg" />
-          <img src="images/japan.svg" />
+    <!-- Carousel slider -->
+    <div class="swiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <!-- elements with  "swiper-carousel-animate-opacity" class will have animated opacity -->
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://535251.xyz/category/AI" target="_parent"><img src="./images/ai.jpg" alt=""> </a>
+            <div class="slide-content">
+              <h2>AI</h2>
+              <p>Includes AI information such as ChatGPT and Midjourney.</p>
+            </div>
+          </div>
+
         </div>
-      </div>
-      <!-- Swiper -->
-      <div class="swiper">
-        <div class="swiper-wrapper">
-          <div class="swiper-slide">
-            <img src="images/usa.jpg" class="travel-slider-bg-image">
-            <div class="travel-slider-content">
-              <div class="travel-slider-title">United States</div>
-              <div class="travel-slider-subtitle">8,295 properties</div>
+        <div class="swiper-slide">
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://535251.xyz/category/Apple" target="_top"><img src="./images/mac.jpg" alt=""> </a>
+            <div class="slide-content">
+              <h2>MAC iPhone HomePod HomeKit </h2>
+              <p>all of mac</p>
             </div>
           </div>
-          <div class="swiper-slide">
-            <img src="images/england.jpg" class="travel-slider-bg-image">
-            <div class="travel-slider-content">
-              <div class="travel-slider-title">England</div>
-              <div class="travel-slider-subtitle">1,110 properties</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://535251.xyz/category/Social" target="_top"><img src="./images/social.jpg" alt=""> </a>
+            <div class="slide-content">
+              <h2>Social</h2>
+              <p>Social News</p>
             </div>
           </div>
-          <div class="swiper-slide">
-            <img src="images/france.jpg" class="travel-slider-bg-image">
-            <div class="travel-slider-content">
-              <div class="travel-slider-title">France</div>
-              <div class="travel-slider-subtitle">314 properties</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://www.535251.xyz/travel" target="_top"><img src="./images/test.jpg" alt=""> </a>
+            <div class="slide-content">
+              <h2>Cover4</h2>
+              <p>Cover4</p>
             </div>
           </div>
-          <div class="swiper-slide">
-            <img src="images/italy.jpg" class="travel-slider-bg-image">
-            <div class="travel-slider-content">
-              <div class="travel-slider-title">Italy</div>
-              <div class="travel-slider-subtitle">1,200 properties</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/russia.jpg" class="travel-slider-bg-image">
-            <div class="travel-slider-content">
-              <div class="travel-slider-title">Russia</div>
-              <div class="travel-slider-subtitle">12,231 properties</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/egypt.jpg" class="travel-slider-bg-image">
-            <div class="travel-slider-content">
-              <div class="travel-slider-title">Egypt</div>
-              <div class="travel-slider-subtitle">505 properties</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/india.jpg" class="travel-slider-bg-image">
-            <div class="travel-slider-content">
-              <div class="travel-slider-title">India</div>
-              <div class="travel-slider-subtitle">2,300 properties</div>
-            </div>
-          </div>
-          <div class="swiper-slide">
-            <img src="images/japan.jpg" class="travel-slider-bg-image">
-            <div class="travel-slider-content">
-              <div class="travel-slider-title">Japan</div>
-              <div class="travel-slider-subtitle">1,700 properties</div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://www.535251.xyz/travel"><img src="./images/test2.jpg" alt=""> </a>
+            <div class="slide-content">
+              <h2>Eternals </h2>
+              <p>In 5000 BC, ten superpowered Eternals—Ajak, Sersi, Ikaris, Kingo, Sprite, Phastos, Makkari, Druig,
+                Gilgamesh, and Thena—are sent by the Celestial Arishem to Earth on their starship, the Domo, to
+                exterminate the invasive Deviants.</p>
             </div>
           </div>
         </div>
       </div>
     </div>
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
   </div>
   
-
 </body>
 
 </html>
-

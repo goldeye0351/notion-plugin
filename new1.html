@@ -1,0 +1,132 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carousel Slider</title>
+    <link      rel="stylesheet"      href="./package/swiper-bundle.min.css"    />
+    <!-- Demo styles -->
+    <style>
+      html,
+      body {
+        position: relative;
+        height: 100%;
+      }
+      body {
+        background: #000000;
+        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+        font-size: 14px;
+        color: #ffffff;
+        margin: 0;
+        padding: 0;
+      }
+      .swiper {
+        width: 100%;
+        height: auto;
+        padding-top: 20px;
+        padding-bottom: 20px;
+      }
+      .swiper-slide {
+        background-position: center;
+        background-size: cover;
+        width: 480px;
+        height: 640px;
+      }
+     .slide-content{
+        position:absolute;
+        left:0;
+        width:100%;
+        Bottom:150px;
+        padding:88px 16px 24px;
+        box-sizing:border-box;
+        background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.75));
+        border-radius:0 0 8px 8px
+      }
+     .slide-content h2{
+        margin:0;
+        font-weight:bold;
+        font-size:36px;
+      }
+     .slide-content p{
+        margin:8px 0 0;
+        opacity:.65;
+        font-size:25px;
+        font-weight:500;
+      }
+    </style>
+
+  </head>
+
+<body>
+    <div class="swiper mySwiper">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://535251.xyz/category/AI" target="_parent"><img src="./images/ai.jpg" alt=""> </a>
+            <div class="slide-content">
+              <h2>AI</h2>
+              <p>Includes AI information such as ChatGPT and Midjourney.</p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://535251.xyz/category/Apple" target="_top"><img src="./images/mac.jpg" alt=""> </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://535251.xyz/category/Social" target="_top"><img src="./images/social.jpg" alt=""> </a>
+         </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://www.535251.xyz/travel" target="_top"><img src="./images/test.jpg" alt=""> </a>
+          </div>
+        </div>
+        <div class="swiper-slide">
+          <div class="swiper-carousel-animate-opacity">
+            <a href="https://www.535251.xyz/travel"><img src="./images/test2.jpg" alt=""> </a>
+          </div>
+        </div>
+      </div>
+
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+  <!-- Swiper JS -->
+    <script src="./package/swiper-bundle.min.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        effect: "coverflow",
+        grabCursor: true,
+        centeredSlides: true,
+        spaceBetween: 30,
+        loop: true,
+        slidesPerView: "auto",
+        autoplay: {
+          delay: 2500,
+          disableOnInteraction: false,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+        
+          coverflowEffect: {
+          rotate: 0,
+          stretch: 0,
+          depth: 300,
+          modifier: 1,
+          slideShadows: true,
+        }
+      });
+    </script>    
+
+</body>
+
+</html>
