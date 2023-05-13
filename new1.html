@@ -1,15 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en">
-
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>new1</title>
     <link      rel="stylesheet"      href="./package/swiper-bundle.min.css"    />
-    <!-- Demo styles -->
     <style>
-      html,
+      html,      
+      body {
+        position: relative;
+        height: 100%;
+      }
       body {
         background: #000000;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -19,25 +20,22 @@
         padding: 0;
       }
       .swiper {
-        width: 100%;
-        height: auto;
-        padding-top: 20px;
-        padding-bottom: 20px;
-              }
+	    width: 100%;
+        position: absolute;
+        top: 20%;
+        padding-top: 50px;
+        padding-bottom: 50px;
+        
+       }
       .swiper-slide {
         background-position: center;
         background-size: cover;
         width: 480px;
         height: 640px;
-        border-radius: 38px;
-        
-        align-items: center;
-        justify-content: center;
       }
      .swiper-slide img{
         border-radius: 38px;
       }
-
      .slide-content{
         position:absolute;
         left:0;
@@ -58,13 +56,8 @@
         font-size:25px;
         font-weight:500;
       }
- 
-
-
     </style>
-
   </head>
-
 <body>
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
@@ -131,20 +124,19 @@
         loop: true,
         slidesPerView: "auto",
         autoplay: {
-          delay: 2500,
-          disableOnInteraction: false,
+	      delay: 2500, 
+          disableOnInteraction: false, 
         },
-        navigation: {
-          nextEl: ".swiper-button-next",
-          prevEl: ".swiper-button-prev",
-        },
-        
-          coverflowEffect: {
+        navigation: { 
+          nextEl: ".swiper-button-next", 
+          prevEl: ".swiper-button-prev", 
+        }, 
+        coverflowEffect: {
           rotate: 0,
           stretch: 0,
           depth: 300,
           modifier: 1,
-          slideShadows: false,
+          slideShadows: true,
         }
       });
     </script>    
