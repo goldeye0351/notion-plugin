@@ -5,15 +5,11 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Carousel Slider</title>
+  <title>new1</title>
     <link      rel="stylesheet"      href="./package/swiper-bundle.min.css"    />
     <!-- Demo styles -->
     <style>
       html,
-      body {
-        position: relative;
-        height: 100%;
-      }
       body {
         background: #000000;
         font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
@@ -27,22 +23,29 @@
         height: auto;
         padding-top: 20px;
         padding-bottom: 20px;
-      }
+              }
       .swiper-slide {
         background-position: center;
         background-size: cover;
         width: 480px;
         height: 640px;
+        border-radius: 38px;
+        
+        align-items: center;
+        justify-content: center;
       }
+     .swiper-slide img{
+        border-radius: 38px;
+      }
+
      .slide-content{
         position:absolute;
         left:0;
-        width:100%;
+        Width:640px;
         Bottom:150px;
         padding:88px 16px 24px;
         box-sizing:border-box;
         background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.75));
-        border-radius:0 0 8px 8px
       }
      .slide-content h2{
         margin:0;
@@ -55,6 +58,9 @@
         font-size:25px;
         font-weight:500;
       }
+ 
+
+
     </style>
 
   </head>
@@ -63,21 +69,18 @@
     <div class="swiper mySwiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-          <div class="swiper-carousel-animate-opacity">
             <a href="https://535251.xyz/category/AI" target="_parent"><img src="./images/ai.jpg" alt="ai"> </a>
             <div class="slide-content">
               <h2>AI</h2>
               <p>Includes AI information such as ChatGPT and Midjourney.</p>
             </div>
-          </div>
+         
         </div>
         <div class="swiper-slide">
-          <div class="swiper-carousel-animate-opacity">
-            <a href="https://535251.xyz/category/Apple" target="_top"><img src="./images/mac.jpg" alt="apple"> </a>
+              <a href="https://535251.xyz/category/Apple" target="_top"><img src="./images/mac.jpg" alt="apple"> </a>
               <div class="slide-content">
               <h2>Apple</h2>
               <p>Apple iMac iPhone Homekit Shortcuts.</p>
-            </div>
            </div>
         </div>
         <div class="swiper-slide">
@@ -141,7 +144,7 @@
           stretch: 0,
           depth: 300,
           modifier: 1,
-          slideShadows: true,
+          slideShadows: false,
         }
       });
     </script>    
