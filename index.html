@@ -8,53 +8,43 @@
    <style>
       html,      
       body {
-        position: relative;
-        height: 100%;
-        background: #000000;
-        font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
-        font-size: 14px;
-        color: #ffffff;
-        margin: 0;
-        padding: 0;
+         justify-content: center;
+         display: flex;
+         background:#000000 ;
+         flex-direction: column;
+         min-height: 100VH;
+         font-family: sans-serif;
+         color: white;
       }
       .swiper {
 	    width: 100%;
-        position: absolute;
-        top: 20%;
-        padding-top: 50px;
-        padding-bottom: 50px;
-        
        }
       .swiper-slide {
-        background-position: center;
-        background-size: cover;
-        width: 480px;
-        height: 640px;
+        max-width: 480px;
+        max-height: 640px;
+        min-width: 320px;
+        min-height: 240px;
       }
      .swiper-slide img{
-	    display: block;
-        
+	    display: block;        
         border-radius: 38px;
+        max-width: 480px;
+        max-height: 640px;
       }
      .slide-content{
         position:absolute;
-        left:0;
-        Width:640px;
-        Bottom:150px;
-        padding:88px 16px 24px;
-        box-sizing:border-box;
-        background:linear-gradient(to bottom,rgba(0,0,0,0),rgba(0,0,0,.75));
+        Width:auto;
+        Bottom:1px;
+        padding:32px;
+
       }
      .slide-content h2{
-        margin:0;
         font-weight:bold;
         font-size:36px;
       }
      .slide-content p{
-        margin:8px 0 0;
-        opacity:.65;
         font-size:25px;
-        font-weight:500;
+        font-weight:100;
       }
     </style> 
   </head>
@@ -63,10 +53,6 @@
       <div class="swiper-wrapper">
         <div class="swiper-slide">
             <a href="https://535251.xyz/category/AI" target="_parent"><img src="./images/ai.jpg" alt="ai"> </a>
-            <div class="slide-content">
-              <h2>AI</h2>
-              <p>Includes AI information such as ChatGPT and Midjourney.</p>
-            </div>
         </div>
         <div class="swiper-slide">
               <a href="https://535251.xyz/category/Apple" target="_top"><img src="./images/mac.jpg" alt="apple"> </a>
@@ -78,23 +64,14 @@
         <div class="swiper-slide">
             <a href="https://535251.xyz/category/Social" target="_top"><img src="./images/social.jpg" alt="social"> </a>
             <div class="slide-content">
-              <h2>Twitter Discord Facebook V2ex 爱范儿 少数派 </h2>
-              <p>Includes AI information such as ChatGPT and Midjourney.</p>
+              <h2>Twitter Discord </h2>
             </div>
         </div>
         <div class="swiper-slide">
             <a href="https://535251.xyz/category/Code"  target="_top"><img src="./images/code.jpg" alt="code"> </a>
-            <div class="slide-content">
-              <h2>Code </h2>
-              <p>None.</p>
-            </div>
         </div>
         <div class="swiper-slide">
             <a href="https://www.535251.xyz/travel"><img src="./images/travel.jpg" alt=""> </a>
-            <div class="slide-content">
-              <h2>旅游</h2>
-              <p>Travel.</p>
-            </div>
         </div>
       </div>
 
