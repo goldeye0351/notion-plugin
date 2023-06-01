@@ -125,3 +125,20 @@
 .swiper-creative .swiper-slide{-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden;transition-property:transform,opacity,height}
 .swiper-cards{overflow:visible}
 .swiper-cards .swiper-slide{transform-origin:center bottom;-webkit-backface-visibility:hidden;backface-visibility:hidden;overflow:hidden}
+body{
+	background-color: black;
+	font-family: sans-serif;
+	color: white;
+	}
+      .swiper-slide {
+        max-width: 330px;
+      }
+     .swiper-slide img{
+        border-radius: 80px;
+        max-width: 480px;
+      }
+     .slide-content{
+        position:absolute;
+        Bottom:1px;
+        padding:18px;
+      }
