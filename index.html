@@ -6,72 +6,54 @@
   <title>new1</title>
     <link      rel="stylesheet"      href="./package/swiper-bundle.min.css"    />
    <style>
-      html,      
-      body {
-         justify-content: center;
-         display: flex;
-         background:#000000 ;
-         flex-direction: column;
-         min-height: 100VH;
-         font-family: sans-serif;
-         color: white;
-      }
-      .swiper {
-	    width: 100%;
-       }
+body{
+	background-color: black;
+	font-family: sans-serif;
+	color: white;
+	}
       .swiper-slide {
-        max-width: 480px;
-        max-height: 640px;
-        min-width: 320px;
-        min-height: 240px;
+        max-width: 330px;
       }
      .swiper-slide img{
-	    display: block;        
-        border-radius: 38px;
+        border-radius: 80px;
         max-width: 480px;
-        max-height: 640px;
       }
      .slide-content{
         position:absolute;
-        Width:auto;
         Bottom:1px;
-        padding:32px;
+        padding:18px;
+      }
 
-      }
-     .slide-content h2{
-        font-weight:bold;
-        font-size:36px;
-      }
-     .slide-content p{
-        font-size:25px;
-        font-weight:100;
-      }
     </style> 
   </head>
 <body>
     <div class="swiper">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <a href="https://535251.xyz/category/AI" target="_parent"><img src="./images/ai.jpg" alt="ai"> </a>
-        </div>
+            <a href="../category/AI" target="_parent"><img src="./images/ai.jpg" alt="ai"> </a>
+            <div class="slide-content">
+              <h2>AI</h2>
+              <p>Includes AI information such as ChatGPT and Midjourney.</p>
+            </div>        </div>
         <div class="swiper-slide">
-              <a href="https://535251.xyz/category/Apple" target="_top"><img src="./images/mac.jpg" alt="apple"> </a>
+              <a href="../category/AI" target="_top"><img src="./images/mac.jpg" alt="apple"> </a>
               <div class="slide-content">
               <h2>Apple</h2>
               <p>Apple iMac iPhone Homekit Shortcuts.</p>
            </div>
         </div>
         <div class="swiper-slide">
-            <a href="https://535251.xyz/category/Social" target="_top"><img src="./images/social.jpg" alt="social"> </a>
+            <a href="../category/AI" target="_top"><img src="./images/social.jpg" alt="social"> </a>
             <div class="slide-content">
               <h2>Twitter Discord </h2>
+              <p>Apple iMac iPhone Homekit Shortcuts.</p>
             </div>
         </div>
         <div class="swiper-slide">
-            <a href="https://535251.xyz/category/Code"  target="_top"><img src="./images/code.jpg" alt="code"> </a>
+            <a href="../category/AI"  target="_top"><img src="./images/code.jpg" alt="code"> </a>
         </div>
         <div class="swiper-slide">
-            <a href="https://www.535251.xyz/travel"><img src="./images/travel.jpg" alt=""> </a>
+            <a href="../category/AI"><img src="./images/travel.jpg" alt=""> </a>
         </div>
       </div>
 
@@ -85,7 +67,6 @@
       var myswiper = new Swiper('.swiper', {
         effect: "coverflow",
         grabCursor: true,
-        centeredSlides: true,
         spaceBetween: 30,
         loop: true,
         slidesPerView: "auto",
@@ -99,10 +80,7 @@
         }, 
         coverflowEffect: {
           rotate: 0,
-          stretch: 0,
           depth: 300,
-          modifier: 1,
-          slideShadows: true,
         }
       });
     </script>   
